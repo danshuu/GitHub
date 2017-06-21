@@ -1,3 +1,5 @@
+### Creating a repository for the <b>first time</b>!
+
 ```
 # navigated into your folder you want to put on Github
 $ touch README.md # create a file called README.md where you can put instructions/info about your folder like what you are reading right now!
