@@ -1,3 +1,4 @@
+'''
 # navigated into your folder you want to put on Github
 $ touch README.md # create a file called README.md where you can put instructions/info about your folder like what you are reading right now!
 $ git init # initialize your git repository locally
@@ -6,38 +7,52 @@ $ git commit -m "first commit" # commits everything in staging to be ready to be
 $ git remote add origin https://github.com/quinnliu/GitCommands.git
 $ git push -u origin master # the "-u" is so that the next time your push you don't need to type "origin master"
 # put in a username & password
+'''
 
+'''
 $ git add .
 $ git add -u # when you have deleted a local file you want to remove from your repository
 $ git commit -m 'what has changed'
 $ git push 
 # put in username & password
+'''
 
+'''
 # Note that you must first generate a SSH key on your local computer and add it to your 
 # Github account before using the following command. Follow the directions here:
 # https://help.github.com/articles/generating-ssh-keys
 $ git remote set-url origin git@github.com:yourUsername/yourReponame.git
+'''
 
+'''
 # fork repo you want to work on
 $ git clone https://github.com/yourUsername/yourReponame.git
 # add changes to your forked repo 
 # make a pull request!
 $ git pull # use this after someone else has made a change to the online repo 
            # your working on and you want to make your local repo up to date
+'''
 
+'''
 $ git rm --cached localFileName
 # add localFileName to .gitignore file 
 # then commit these changes
 # push these changes to your repo!
+'''
 
+'''
 # undo multiple commits  
 $ git reset --hard commitSHA###... # changes staging index and 
                                    # local folder to match online 
                                                                       # repository commit
+'''
 
+'''
 # removing 3 commits from online github repo
 $ git push -f origin HEAD^^^:branchNameToUndoLast3Pushs
+'''
 
+'''
 # creating a new branch
 $ git branch -a # list all branches in working folder  
 $ git branch newBranchName  
@@ -45,7 +60,9 @@ $ git checkout newBranchName # switch to branch newBranchName
 $ git push -u origin newBranchName # adds new branch to github repo and "-u" lets 
 #                                    you know when your local branch is different 
 #                                    than the remote branch
+'''
 
+'''
 # merging new branch to old branch
 $ git checkout oldBranchName
 $ git merge --no-ff newBranchName # "--no-ff" creates a commit that there was a branch merge
@@ -54,3 +71,4 @@ $ git merge --no-ff newBranchName # "--no-ff" creates a commit that there was a 
 $ git push origin oldBranchName 
 $ git branch -D newBranchName # deletes local branch newBranchName
 $ git push origin --delete newBranchName # deletes remote branch newBranchName
+'''
